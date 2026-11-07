@@ -1,0 +1,24 @@
+.login {
+  @apply flex min-h-screen items-center justify-center bg-neutral-100 p-6;
+}
+.login__card {
+  @apply flex w-full max-w-md flex-col gap-4 border-2 border-neutral-800 bg-white p-8;
+}
+.login__title {
+  @apply text-3xl font-bold text-neutral-900;
+}
+.login__subtitle {
+  @apply -mt-2 text-sm text-neutral-600;
+}
+.login__switch {
+  @apply flex items-center gap-2 border border-neutral-400 bg-neutral-100 p-2 text-sm;
+}
+.login__switch-label {
+  @apply mr-auto text-neutral-600;
+}
+.login__option {
+  @apply cursor-pointer border border-neutral-500 bg-white px-3 py-1 text-neutral-800;
+}
+.login__option--active {
+  @apply border-neutral-800 bg-neutral-800 font-semibold text-white;
+}

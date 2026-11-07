@@ -1,0 +1,12 @@
+.grading__context {
+  @apply flex flex-wrap gap-x-8 gap-y-1 border border-neutral-400 bg-white px-4 py-2 text-sm;
+}
+.grading__context-item {
+  @apply flex gap-2;
+}
+.grading__context-item dt {
+  @apply font-semibold text-neutral-700;
+}
+.grading__context-item dd {
+  @apply text-neutral-800;
+}

@@ -1,0 +1,161 @@
+/* Greyscale wireframe building blocks shared by every screen. */
+.wf-screen {
+  @apply mx-auto flex max-w-5xl flex-col gap-5 p-6;
+}
+.wf-screen__header {
+  @apply border-b-2 border-neutral-800 pb-3;
+}
+.wf-screen__title {
+  @apply text-2xl font-bold text-neutral-900;
+}
+.wf-screen__subtitle {
+  @apply mt-1 text-sm text-neutral-600;
+}
+
+.wf-panel {
+  @apply border border-neutral-500 bg-white p-4;
+}
+.wf-panel__title {
+  @apply mb-3 border-b border-neutral-300 pb-1 text-xs font-bold uppercase tracking-wider text-neutral-700;
+}
+.wf-row {
+  @apply grid gap-5 md:grid-cols-2;
+}
+
+.wf-fields {
+  @apply flex flex-col gap-3;
+}
+.wf-fields--two {
+  @apply grid gap-3 md:grid-cols-2;
+}
+.wf-field {
+  @apply flex flex-col gap-1;
+}
+.wf-field__label {
+  @apply text-sm font-semibold text-neutral-800;
+}
+.wf-field__hint {
+  @apply block text-xs font-normal text-neutral-500;
+}
+.wf-input {
+  @apply w-full border border-neutral-500 bg-white px-2 py-1.5 text-sm text-neutral-800 placeholder:text-neutral-400;
+}
+.wf-input--area {
+  @apply min-h-24;
+}
+.wf-input--cell {
+  @apply w-16 text-center;
+}
+.wf-check {
+  @apply flex items-center gap-2 text-sm text-neutral-800;
+}
+.wf-dropzone {
+  @apply border-2 border-dashed border-neutral-500 bg-neutral-100 px-3 py-8 text-center text-sm text-neutral-600;
+}
+
+.wf-table-wrap {
+  @apply overflow-x-auto;
+}
+.wf-table {
+  @apply w-full border-collapse text-sm;
+}
+.wf-table th {
+  @apply border border-neutral-500 bg-neutral-200 px-2 py-1.5 text-left font-semibold text-neutral-800;
+}
+.wf-table td {
+  @apply border border-neutral-400 px-2 py-1.5 text-neutral-800;
+}
+.wf-caption {
+  @apply mt-2 text-xs text-neutral-600;
+}
+
+.wf-tag {
+  @apply inline-block border border-neutral-600 px-1.5 py-0.5 text-xs text-neutral-800;
+}
+.wf-link {
+  @apply text-neutral-900 underline underline-offset-2;
+}
+.wf-note {
+  @apply border border-dashed border-neutral-500 bg-neutral-100 px-3 py-2 text-sm text-neutral-700;
+}
+
+.wf-actions {
+  @apply mt-3 flex flex-wrap gap-2;
+}
+.wf-btn {
+  @apply inline-block cursor-pointer border-2 border-neutral-800 px-4 py-1.5 text-sm font-semibold;
+}
+.wf-btn--primary {
+  @apply bg-neutral-800 text-white;
+}
+.wf-btn--secondary {
+  @apply bg-white text-neutral-800;
+}
+
+.wf-list {
+  @apply list-disc space-y-1 pl-5 text-sm text-neutral-800;
+}
+.wf-keyvalue {
+  @apply flex flex-col gap-1 text-sm;
+}
+.wf-keyvalue__row {
+  @apply grid grid-cols-[10rem_1fr] gap-2;
+}
+.wf-keyvalue dt {
+  @apply font-semibold text-neutral-700;
+}
+.wf-keyvalue dd {
+  @apply text-neutral-800;
+}
+
+.wf-choices {
+  @apply flex flex-col gap-2;
+}
+.wf-choice {
+  @apply flex items-start gap-2 text-sm text-neutral-800;
+}
+
+.wf-block {
+  @apply flex items-center justify-center border border-neutral-500 text-sm text-neutral-600;
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--color-neutral-100),
+    var(--color-neutral-100) 8px,
+    var(--color-neutral-200) 8px,
+    var(--color-neutral-200) 16px
+  );
+}
+.wf-block--sm {
+  @apply h-20;
+}
+.wf-block--md {
+  @apply h-40;
+}
+.wf-block--lg {
+  @apply h-64;
+}
+
+.wf-timeline {
+  @apply flex flex-col gap-2;
+}
+.wf-timeline__item {
+  @apply flex items-baseline gap-3 text-sm text-neutral-500;
+}
+.wf-timeline__dot {
+  @apply h-3 w-3 shrink-0 translate-y-0.5 rounded-full border-2 border-neutral-500 bg-white;
+}
+.wf-timeline__item--done {
+  @apply text-neutral-700;
+}
+.wf-timeline__item--done .wf-timeline__dot {
+  @apply border-neutral-700 bg-neutral-700;
+}
+.wf-timeline__item--current {
+  @apply font-bold text-neutral-900;
+}
+.wf-timeline__item--current .wf-timeline__dot {
+  @apply border-neutral-900 bg-neutral-300 ring-2 ring-neutral-900 ring-offset-1;
+}
+.wf-timeline__detail {
+  @apply text-xs font-normal text-neutral-500;
+}

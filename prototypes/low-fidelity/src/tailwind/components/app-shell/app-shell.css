@@ -1,0 +1,33 @@
+.shell {
+  @apply min-h-screen bg-neutral-100;
+}
+.shell__header {
+  @apply flex flex-wrap items-center justify-between gap-3 border-b-2 border-neutral-800 bg-white px-6 py-3;
+}
+.shell__brand {
+  @apply flex items-baseline gap-3 text-lg text-neutral-900;
+}
+.shell__tagline {
+  @apply text-xs font-normal text-neutral-500;
+}
+.shell__user {
+  @apply flex items-center gap-4 text-sm;
+}
+.shell__body {
+  @apply flex flex-col md:flex-row;
+}
+.shell__nav {
+  @apply flex shrink-0 flex-col gap-5 border-r border-neutral-400 bg-neutral-50 p-4 md:w-56;
+}
+.shell__group-title {
+  @apply mb-1 text-xs font-bold uppercase tracking-wider text-neutral-500;
+}
+.shell__link {
+  @apply block border border-transparent px-2 py-1 text-sm text-neutral-700;
+}
+.shell__link--active {
+  @apply border-neutral-800 bg-white font-bold text-neutral-900;
+}
+.shell__main {
+  @apply min-w-0 flex-1;
+}

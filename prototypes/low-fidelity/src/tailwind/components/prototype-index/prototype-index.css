@@ -1,0 +1,12 @@
+.index {
+  @apply mx-auto flex max-w-4xl flex-col gap-6 p-8;
+}
+.index__header {
+  @apply border-b-2 border-neutral-800 pb-3;
+}
+.index__title {
+  @apply text-3xl font-bold text-neutral-900;
+}
+.index__subtitle {
+  @apply mt-1 text-sm text-neutral-600;
+}

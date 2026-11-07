@@ -1,0 +1,7 @@
+/* Imports every component stylesheet under tailwind/components/. */
+@import "./components/wireframe/wireframe.css";
+@import "./components/app-shell/app-shell.css";
+@import "./components/login/login.css";
+@import "./components/grading-sheet/grading-sheet.css";
+@import "./components/minutes-preview/minutes-preview.css";
+@import "./components/prototype-index/prototype-index.css";
