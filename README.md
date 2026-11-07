@@ -16,7 +16,8 @@ Backend foundation: Spring Boot server, PostgreSQL schema, token authentication,
 | --- | --- |
 | `server/` | Spring Boot API (Java 21, Maven) |
 | `client/` | Reserved for the Next.js + Electron client |
-| `scripts/` | Dev helpers: `dev-up.sh`, `dev-down.sh`, `test.sh` |
+| `prototypes/` | Low-fidelity prototype of the main screens |
+| `scripts/` | Dev helpers: `dev-up.sh`, `dev-down.sh`, `test.sh`, `capture-prototype.sh` |
 | `docs/` | Architecture and domain documentation |
 
 ## Quickstart
@@ -59,6 +60,15 @@ Errors are always JSON: `{timestamp, status, error, message, path, fieldErrors}`
 Runs unit tests (JUnit 5 + Mockito) and integration tests (Testcontainers PostgreSQL). Docker must be running. With a local JDK 21 it uses `server/mvnw`; without one it runs Maven in a container.
 
 Directly with Maven: `cd server && ./mvnw test` (unit only) or `./mvnw verify` (unit + integration).
+
+## Prototypes
+
+`prototypes/low-fidelity/` holds the non-functional, greyscale wireframes of the main screens (Next.js static export). See its [README](prototypes/low-fidelity/README.md).
+
+```bash
+cd prototypes/low-fidelity && npm install && npm run dev   # http://localhost:3000
+./scripts/capture-prototype.sh                              # PNG of every screen in prototypes/low-fidelity/screenshots/
+```
 
 ## Documentation
 

@@ -18,3 +18,7 @@ dist/
 .vscode/
 *.iml
 .DS_Store
+
+# Build output
+next-env.d.ts
+*.tsbuildinfo
